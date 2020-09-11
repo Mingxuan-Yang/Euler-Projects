@@ -18,25 +18,25 @@ def counting(target, max_width = None, max_length = None):
         
     max_width : int, optional
         The maximum width of the resulting grid. It should be positive. If `max_width` is not 
-        given, the value ⌈(4n)^{1/4}⌉, where n is the value of 
+        given, the value ⌈(4n)^(1/4)⌉, where n is the value of 
         `target`, will be employed based on the following formula.
         
             n = x(x + 1)y(y + 1)/4
         
         Here x and y represent the width and length of the grid. y is implicitly larger 
         than x. Therefore, the maximum value of x is equal to y. After calculation, it 
-        should be approximately ⌈(4n)^{1/4}⌉.
+        should be approximately ⌈(4n)^(1/4)⌉.
         
     max_length : int, optional
         The maximum length of the resulting grid. It should be positive. If `max_length` is 
-        not given, the value ⌈(2n)^{1/2}⌉, where n is the value of 
+        not given, the value ⌈(2n)^(1/2)⌉, where n is the value of 
         `target`, will be employed based on the following formula.
         
             n = x(x + 1)y(y + 1)/4
         
         Here x and y represent the width and length of the grid. y is implicitly larger 
         than x. When x is equal to 1, y will reach its maximum value. After calculation, 
-        it should be approximately ⌈(2n)^{1/2}⌉.
+        it should be approximately ⌈(2n)^(1/2)⌉.
         
     Returns
     -------
